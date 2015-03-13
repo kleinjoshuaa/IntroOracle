@@ -1,0 +1,45 @@
+
+Projemp Database Salary Report                                   Page:         1
+                                                                                
+Employee                         Salary                                         
+Name            Department       Amount                                         
+=============== ========== ============                                         
+Delia                  100   $85,000.00                                         
+Goddard                      $52,500.00                                         
+Jacobs                       $57,750.00                                         
+Smith                        $47,250.00                                         
+Walters                      $51,975.00                                         
+                ********** ------------                                         
+                Subtotal    $294,475.00                                         
+                                  Confidential                                  
+
+Projemp Database Salary Report                                   Page:         2
+                                                                                
+Employee                         Salary                                         
+Name            Department       Amount                                         
+=============== ========== ============                                         
+Cooper                 200   $80,000.00                                         
+                ********** ------------                                         
+                Subtotal     $80,000.00                                         
+Longo                  300   $75,000.00                                         
+                ********** ------------                                         
+                Subtotal     $75,000.00                                         
+Niam                   400   $70,000.00                                         
+                                  Confidential                                  
+
+Projemp Database Salary Report                                   Page:         3
+                                                                                
+Employee                         Salary                                         
+Name            Department       Amount                                         
+=============== ========== ============                                         
+                ********** ------------                                         
+                Subtotal     $70,000.00                                         
+                           ------------                                         
+total                       $519,475.00                                         
+
+
+
+                                  Confidential                                  
+
+8 rows selected.
+

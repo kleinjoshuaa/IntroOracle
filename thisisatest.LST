@@ -1,0 +1,64 @@
+SQL> select * from department;
+
+DEPARTMENT_ID DEPARTMENT_NAME                SUPERVISOR_SSN                     
+------------- ------------------------------ --------------                     
+          400 Accounting                          123123123                     
+          100 Information Technology              123456789                     
+          200 Marketing                           987654321                     
+          300 Sales                               123445678                     
+
+SQL> spo
+currently spooling to thisisatest.LST
+SQL> help spo
+
+ SPOOL
+ -----
+
+ Stores query results in a file, or optionally sends the file to a printer.
+
+ SPO[OL] [file_name[.ext] [CRE[ATE] | REP[LACE] | APP[END]] | OFF | OUT]
+
+
+SQL> spo thisisatest.txt select * from department;
+SP2-0768: Illegal SPOOL command
+Usage: SPOOL { <file> | OFF | OUT }
+where <file> is file_name[.ext] [CRE[ATE]|REP[LACE]|APP[END]]
+SQL> spo thisisatest app
+SQL> select * from department;
+
+DEPARTMENT_ID DEPARTMENT_NAME                SUPERVISOR_SSN                     
+------------- ------------------------------ --------------                     
+          400 Accounting                          123123123                     
+          100 Information Technology              123456789                     
+          200 Marketing                           987654321                     
+          300 Sales                               123445678                     
+
+SQL> select * from title;
+
+  TITLE_ID TITLE_DESCRIPTION              TITLE_CLASS                           
+---------- ------------------------------ -------------------------             
+FROM_SALARY_RANGE TO_SALARY_RANGE                                               
+----------------- ---------------                                               
+        10 Supervisor                     Uper Management                       
+            75000           99999                                               
+                                                                                
+        20 Project Leader                 Middle Management                     
+            50000           74999                                               
+                                                                                
+        30 Programmer                     Technical                             
+            25000           49999                                               
+                                                                                
+
+  TITLE_ID TITLE_DESCRIPTION              TITLE_CLASS                           
+---------- ------------------------------ -------------------------             
+FROM_SALARY_RANGE TO_SALARY_RANGE                                               
+----------------- ---------------                                               
+        40 Accountant                     Financial                             
+            45000           79999                                               
+                                                                                
+
+SQL> spo thisisatest app out
+SP2-0768: Illegal SPOOL command
+Usage: SPOOL { <file> | OFF | OUT }
+where <file> is file_name[.ext] [CRE[ATE]|REP[LACE]|APP[END]]
+SQL> spool off

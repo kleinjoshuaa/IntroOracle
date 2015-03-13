@@ -1,0 +1,4 @@
+select salary
+from employee
+where employee_ssn = '123456789'
+/
